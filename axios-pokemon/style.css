@@ -1,0 +1,65 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  transition: background 0.3s ease;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+/* Container for Pokémon data */
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode container */
+.dark-mode .container {
+  background: #333;
+}
+
+/* Styling for the input field */
+input {
+  padding: 8px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  background: #ffcb05;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Card that displays Pokémon information */
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #fff;
+}
+
+/* Dark mode card */
+.dark-mode .card {
+  background: #444;
+  color: white;
+}
+
+/* Pokémon image styling */
+img {
+  width: 120px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex - Axios Pokémon API</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pokédex (Axios Pokémon API)</h1>
+
+    <!-- Search and Control Buttons -->
+    <input type="text" id="search" placeholder="Enter Pokémon name or ID">
+    <button onclick="fetchPokemon()">Search</button>
+    <button onclick="getRandomPokemon()">🎲 Random Pokémon</button>
+    <button onclick="prevPokemon()">◀ Previous</button>
+    <button onclick="nextPokemon()">Next ▶</button>
+
+    <!-- Pokémon Display Card -->
+    <div id="pokemonCard" class="card"></div>
+
+    <!-- Additional Features -->
+    <h2>Extra Features</h2>
+    <!-- <button onclick="fetchPartialMatch()">🔍 Partial Name Search</button> -->
+    <button onclick="fetchTenRandom()">🎲 10 Random Pokémon</button>
+    <button onclick="toggleShiny()">✨ Toggle Shiny</button>
+    <!-- <button onclick="showSearchHistory()">📜 Search History</button> -->
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <button onclick="comparePokemon()">⚔️ Compare Pokémon</button>
+    <button onclick="playCry()">🔊 Play Pokémon Cry</button>
+
+    <!-- Display Search History -->
+    <h3>Search History (Last 5)</h3>
+    <ul id="searchHistory"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
